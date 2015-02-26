@@ -1,9 +1,9 @@
 //AJAX
 var searchUrl = 'http://api.bing.net/qson.aspx?';
 
-function populateQuery(input) {
-	var ui = input;
-	var url = encodeURI(searchUrl + 'query=' + ui + "&JsonType=callback&JsonCallback=?");
+function populateQuery() {
+	var input = $('search').val();
+	var url = encodeURI(searchUrl + 'query=' + input + "&JsonType=callback&JsonCallback=?");
 
 	$.ajax({
 		url: url,
@@ -21,7 +21,7 @@ function showResults(web) {
 	});
 };
 
-function webSearchHTML(web.ID) {
+function webSearchHTML(ID) {
 	var webString = '<div class="search">' +
 					'<div class="sub-menu">' +
 						'<div class="title">' + web.Title + '</div>' +
