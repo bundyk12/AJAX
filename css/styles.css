@@ -1,0 +1,281 @@
+/*This will be the stylesheet for my site*/
+body {
+	background-image: url('../images/header4.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	top:0;
+	text-align: center;
+	padding:1em 0;
+	width:100%;
+}
+
+nav ul {
+	display: inline-block;
+	line-height: 0;
+	margin: 0;
+	height: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+nav ul li {
+	display: inline-block;
+	position: relative;
+	border-radius: 3.5em;
+	padding: .5em;
+	font-size: .9em;
+	margin: 0 .5em;
+	color:#fff;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color:#fff;
+	padding: .5em;
+	border-radius: .7em;
+}
+
+nav ul li a:hover {
+	border:1px solid #fff;
+	margin:-1px;
+}
+
+nav ul li ul {
+	display: none;
+}
+
+
+.headerContainer {
+	margin:100px auto;
+	width:60%;
+	position:relative;
+}
+
+.headerContainer img {
+	width:25%;
+	margin:0 5% 0 10%;
+	display: inline;
+	max-width: 175px;
+	min-width: 100px;
+	vertical-align: middle;
+}
+
+.name {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color:#fff;
+	text-align: center;
+	font-size:3.5vw;
+	margin:0 10% 0 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.quote {
+	display: inline-block;
+	width:100%;
+	text-align: center;
+	color: #fff;
+	margin:7% 0 0 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-style: italic;
+}
+
+.callout ul {
+	list-style-type: none;
+	margin: 15% auto 0 auto;
+	width:90%;
+}
+
+.callout ul li {
+	display: inline-block;
+	margin:1%;
+	width:27%;
+	background-color: rgba(238,238,238,.85);	
+	height: 20%;
+	padding:1.5%;
+	border-radius: 1.2em;
+	border:1px solid #009345;
+}
+
+.callout ul li h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color:#009345;
+	text-align: left;
+	font-size:1.8em;
+	margin:0;
+}
+
+.callout ul li p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color:#444;
+	text-align: left;
+	font-size:.9em;
+	line-height: 1.7em;
+	margin:2% 0 0 0;
+}
+
+.callout ul li p a {
+	color:#009345;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+main {
+	width:70%;
+	margin:10% auto;
+	padding:3%;
+	background-color: rgba(238,238,238,.85);	
+	border-radius: 1.2em;
+	border:1px solid #009345;
+}
+
+main h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	color:#333;
+	text-align: center;
+	margin:0;
+	padding:0;
+}
+
+main label {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+}
+
+main input {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+footer {
+	width:70%;
+	margin:10% auto;
+	background-color: rgba(238,238,238,.85);	
+	border-radius: 1.2em;
+	height:3em;
+	padding:.2em 0 0 0;
+}
+
+.footer {
+	font-family: 'Open Sans', sans-serif;
+	color:#333;
+	font-weight: 400;
+	font-size:.9em;
+	text-align: center;
+}
+
+.footerLink {
+	color:#009345;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size:.9em;
+	text-align: center;
+}
+
+h1.pageTitle {
+	font-size: 3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color:#333;
+	font-style: normal;
+}
+
+h2 {
+	font-size: 1.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color:#009345;
+	font-style: italic;
+}
+
+p.date {
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color:#333;
+}
+
+article p, .leftBarCallout p, .leftBarCallout ul li, .resumeSection p, .resumeSection ul li {
+	font-size: .9em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 2em;
+}
+
+p.author {
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+#leftBar {
+	width:20%;
+	background-color: rgba(238,238,238,.85);	
+	border-radius: 1.2em;
+	margin:10% 2% 0 5%;
+	padding:3%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#mainRight {
+	width:50%;
+	background-color: rgba(238,238,238,.85);	
+	border-radius: 1.2em;
+	margin:10% 2% 0 2%;
+	padding:3%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color:#333;
+}
+
+.collapsed {
+	display:none;
+}
+
+.rotated {
+	-webkit-transform:rotate(90deg);
+	transition: all .2s;
+}
+
+span {
+	display: inline-block;
+	cursor: pointer;
+	transition: all .2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
