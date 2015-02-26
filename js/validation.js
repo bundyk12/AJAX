@@ -2,7 +2,7 @@
 var searchUrl = 'http://api.bing.net/qson.aspx?';
 
 function populateQuery() {
-	var input = $('search').val();
+	var input = $('#search').val();
 	var url = encodeURI(searchUrl + 'query=' + input + "&JsonType=callback&JsonCallback=?");
 
 	$.ajax({
