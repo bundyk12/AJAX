@@ -9,28 +9,26 @@ function populateQuery() {
 		url: url,
 		dataType: 'jsonp',
 	}).done(function(response){
-		showResults(response.web);
+		showResults(response.searchOptions);
 	});
 };
 
-function showResults(web) {
+function showResults(searchOptions) {
 	var results = $('.results');
 	results.empty();
-	$(web).each(function(){
-		results.append(webSearchHTML(web.ID));
+	$(searchOptions).each(function(){
+		results.append(webSearchHTML(searchOptions[i]));
 	});
 };
 
-function webSearchHTML(ID) {
-	var webString = '<div class="search">' +
-					'<div class="sub-menu">' +
-						'<div class="title">' + web.Title + '</div>' +
-						'<div class="description">Rated: ' + web.Description + '</div>' +
-						'<div class="displayUrl">' + '<a href="' + web.Url + '">' + web.DisplayUrl + '</a></div>' +
-					'</div>' +
-				'</div>';
+function webSearchHTML(searchOption) {
+	var searchString = '<div class="search">' +
+						'<div class="sub-menu">' +
+							'<div class="title">' + '<a href="' + encodeURI('http://www.bing.com/search?q=' + searchOption.Text) + '">' + searchOption.Text + '</a><</div>' +
+						'</div>' +
+					'</div>';
 
-	var listEl = $(webString);
+	var listEl = $(searchString);
 	return listEl;
 }
 
