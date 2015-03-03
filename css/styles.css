@@ -266,7 +266,22 @@ span {
 	transition: all .2s;
 }
 
+.title a {
+	text-decoration: none;
+	color:#009345;
+}
 
+.title a:hover {
+	color:#333;
+}
+
+.title {
+	margin: 0 0 2px 60px;
+}
+
+.search, .sub-menu {
+	margin:0;
+}
 
 
 

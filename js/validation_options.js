@@ -9,12 +9,12 @@ function populateQuery() {
 		url: url,
 		dataType: 'jsonp',
 	}).done(function(response){
-		showResults(response.SearchSuggestion.Section);
+		showResults(response.searchOptions);
 	});
 };
 
 function showResults(searchOptions) {
-	var results = $('#results');
+	var results = $('.results');
 	results.empty();
 	$(searchOptions).each(function(i){
 		results.append(webSearchHTML(searchOptions[i]));
@@ -24,7 +24,7 @@ function showResults(searchOptions) {
 function webSearchHTML(searchOption) {
 	var searchString = '<div class="search">' +
 						'<div class="sub-menu">' +
-							'<div class="title">' + '<a href="' + encodeURI('http://www.bing.com/search?q=' + searchOption.Text) + '">' + searchOption.Text + '</a></div>' +
+							'<div class="title">' + '<a href="' + encodeURI('http://www.bing.com/search?q=' + searchOption.Text) + '">' + searchOption.Text + '</a><</div>' +
 						'</div>' +
 					'</div>';
 
